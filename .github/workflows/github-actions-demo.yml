@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Github vars
         run: echo "$GITHUB_EVENT_NAME from $GITHUB_REF_NAME"
+    
+      - uses: actions/checkout@v4
 
       - name: Repository files
         run: ls -la
